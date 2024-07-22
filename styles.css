@@ -16,4 +16,38 @@
 
 /*---------------------Layout------------------------------------*/
 
+body{
+   display: grid;
+   place-items: center;
+   grid-template-rows: 98% 1fr; 
+}
 
+main{
+    max-width: 343px;
+    border-radius: 10px;
+    
+}
+
+
+article{
+    padding-inline-start: 24px;
+    padding-inline-end: 24px;
+}
+
+
+img{
+    width: 100%;
+}
+
+
+
+/*------------------Fonts and Colors -------------------------*/
+
+body{
+    background-color: #e2eaf2;
+    
+}
+
+main{
+    background-color: #FFFFFF;
+}
