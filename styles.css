@@ -1,16 +1,18 @@
 @font-face {
     font-family: "Fraunces";
-    src: url("/fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
+    src: url("fonts/Fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf");
 }
 
 @font-face {
     font-family: "Montserrat";
-    src: url("/fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
+    src: url("fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
 
 *{
     box-sizing: border-box;
+    margin:0;
+    padding: 0;
 }
 
 
@@ -25,29 +27,79 @@ body{
 main{
     max-width: 343px;
     border-radius: 10px;
+   
     
+    overflow: hidden;
 }
 
 
 article{
-    padding-inline-start: 24px;
-    padding-inline-end: 24px;
+    padding-inline: 24px;
+   
+     
 }
 
 
 img{
-    width: 100%;
+    
+  width: 100%;
 }
 
+span{
+    margin-top: 24px;
+    margin-bottom:32px;
+    display: block;
+}
 
+h1{
+    margin-bottom:24px ;
+}
+
+p{
+    margin-bottom:29px;
+}
 
 /*------------------Fonts and Colors -------------------------*/
 
 body{
-    background-color: #e2eaf2;
+    background-color: #f2eae2;
     
 }
 
 main{
     background-color: #FFFFFF;
+}
+h1{
+    font-family: 'Fraunces';
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1C232B;
+}
+span, p{
+   color: #6C7289
+}
+
+/*------------media query-----------------*/
+
+
+
+
+@media (min-width:800px) {
+
+    main{
+        display: flex;
+        max-width: 600px; 
+       
+
+    }
+
+    img{
+      max-width: 300px;
+         width: auto;
+        height: 100%;
+        
+    }
+article{
+   padding:  0 32px 32px 32px; 
+}
 }
