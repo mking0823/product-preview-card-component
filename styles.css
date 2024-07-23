@@ -97,7 +97,8 @@ h1{
     color: #1C232B;
 }
 span, p{
-   color: #6C7289
+   color: #6C7289;
+    font-family: "Montserrat";
 }
 
 article > span {
