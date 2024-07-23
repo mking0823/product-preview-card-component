@@ -70,6 +70,11 @@ p{
     margin-bottom:29px;
 }
 
+article > a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /*------------------Fonts and Colors -------------------------*/
 
 body{
@@ -88,6 +93,17 @@ h1{
 }
 span, p{
    color: #6C7289
+}
+
+
+article > a{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.14rem;
+}
+article > a:visited{
+    color:white;
+
 }
 
 /*------------media query-----------------*/
