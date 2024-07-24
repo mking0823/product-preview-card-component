@@ -8,7 +8,6 @@
     src: url("fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
-/*---------------------Layout------------------------------------*/
 
 *{
     box-sizing: border-box;
@@ -22,18 +21,22 @@
     text-align: center;
     padding:15px 0;
     border-radius:8px ;
-    margin-bottom: 25px;
 }
 
 svg{
     margin-right:11px ;
 }
 
+/*---------------------Layout------------------------------------*/
 
+html{
+    height:100%;
+}
 body{
    display: grid;
    place-items: center;
    grid-template-rows: 98% 1fr; 
+   height:100%;
 }
 
 main{
@@ -58,7 +61,7 @@ img{
 }
 
 span{
- 
+    margin-top: 24px;
     margin-bottom:32px;
     display: block;
 }
@@ -68,12 +71,9 @@ h1{
 }
 
 p{
-    margin-bottom:20px;
+    margin-bottom:29px;
 }
 
-article > span{
-    margin-top:24px;
-}
 article > a ,article > div{
     display: flex;
     align-items: center;
@@ -112,18 +112,14 @@ article > a{
     text-decoration: none;
     font-weight: 700;
     font-size: 1.14rem ;
+    margin-bottom: 24px;
 }
 article > a:visited{
     color:white;
 
 }
 
-p{
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 164%;
-    font-family: "Montserrat"
-}
+
 .small-price{
     font-weight: 500;
     font-size: .812rem;
@@ -139,9 +135,6 @@ p{
  text-decoration: none;
 }
 
-main, main>a , p h1,span{
-    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.25));;
-}
 /*------------media query-----------------*/
 
 
@@ -163,9 +156,6 @@ main, main>a , p h1,span{
         
     }
 article{
-   padding:  0 32px 32px 32px; 
-}
-main a{
-    margin-bottom:0;
+   padding:  0 32px 8px 32px; 
 }
 }
