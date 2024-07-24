@@ -8,6 +8,7 @@
     src: url("fonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf");
 }
 
+/*---------------------Layout------------------------------------*/
 
 *{
     box-sizing: border-box;
@@ -21,13 +22,13 @@
     text-align: center;
     padding:15px 0;
     border-radius:8px ;
+    margin-bottom: 25px;
 }
 
 svg{
     margin-right:11px ;
 }
 
-/*---------------------Layout------------------------------------*/
 
 body{
    display: grid;
@@ -57,7 +58,7 @@ img{
 }
 
 span{
-    margin-top: 24px;
+ 
     margin-bottom:32px;
     display: block;
 }
@@ -67,9 +68,12 @@ h1{
 }
 
 p{
-    margin-bottom:29px;
+    margin-bottom:20px;
 }
 
+article > span{
+    margin-top:24px;
+}
 article > a ,article > div{
     display: flex;
     align-items: center;
@@ -113,7 +117,12 @@ article > a:visited{
 
 }
 
-
+p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 164%;
+    font-family: "Montserrat"
+}
 .small-price{
     font-weight: 500;
     font-size: .812rem;
@@ -154,5 +163,8 @@ main, main>a , p h1,span{
     }
 article{
    padding:  0 32px 32px 32px; 
+}
+main a{
+    margin-bottom:0;
 }
 }
